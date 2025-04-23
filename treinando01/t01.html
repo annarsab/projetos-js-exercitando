@@ -1,0 +1,66 @@
+<!-- proposta do exercicio:
+Crie um campo onde a pessoa digita a idade e clica em "Verificar".
+Mostre na tela se a pessoa é:
+
+Menor de idade (menos de 18),
+
+Maior de idade (18 ou mais),
+
+Idoso (60+)-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verificador de Idade</title>
+  <style>
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 15px;
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+    }
+
+    #button,
+    #txtn {
+      font-size: 15px;
+    }
+
+    div {
+      margin: 10px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1>Qual a sua idade?</h1>
+  <p>Informe abaixo:</p>
+  <input type="number" name="txtn" id="txtn">
+  <input type="button" value="Verificar" id="button" onclick="clicar()">
+  <div id="res">
+
+  </div>
+  <div id="resposta">
+
+  </div>
+
+  <script>
+    function clicar() {
+      var idade = Number(document.querySelector('input#txtn').value)
+      res.innerHTML = `A sua idade é ${idade}.`
+
+      if (idade < 18) {
+        resposta.innerHTML = "Você ainda é menor de idade."
+      } else if (idade >= 60) {
+        resposta.innerHTML = 'Você é idoso.'
+      } else {
+        resposta.innerHTML = 'Você é maior de idade.'
+      }
+    }
+  </script>
+
+</body>
+
+</html>
