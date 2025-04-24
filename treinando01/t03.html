@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Condição Simples</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      background: #fff;
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <p>Informe um número:</p>
+  <input type="text" name="txtnum" id="txtnum">
+  <input type="button" value="Verificar" onclick="clicar()">
+  <div id="res">
+
+  </div>
+
+  <script>
+    function clicar() {
+      var numero = document.querySelector('input#txtnum').value
+      if (numero > 10) {
+        res.innerText = `O número ${numero} é maior que 10.`
+      } else {
+        res.innerText = "Esse número é menor que 10."
+      }
+    }
+  </script>
+</body>
+
+</html>

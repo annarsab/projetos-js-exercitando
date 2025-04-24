@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercícios JS e Java</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+    }
+
+    h1,
+    h2 {
+      color: #333;
+    }
+
+    .exercicio {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      padding: 15px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+      color: #0056b3;
+    }
+
+    code {
+      background: #eee;
+      display: block;
+      padding: 10px;
+      white-space: pre-wrap;
+      margin-top: 10px;
+      border-left: 4px solid #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Exercícios de JavaScript e Java</h1>
+
+  <h2>JavaScript</h2>
+
+  <div class="exercicio">
+    <strong>1. Condição Simples</strong><br>
+    Peça ao usuário um número e diga se ele é maior que 10.
+    <details>
+      <summary>Mostrar resposta</summary>
+      <code>
+let numero = prompt("Digite um número:");
+if (numero > 10) {
+  alert("O número é maior que 10.");
+}
+      </code>
+    </details>
+  </div>
+
+  <div class="exercicio">
+    <strong>2. Condição Composta</strong><br>
+    Peça ao usuário sua idade. Se for maior ou igual a 18, diga que pode votar. Caso contrário, diga que não pode.
+    <details>
+      <summary>Mostrar resposta</summary>
+      <code>
+let idade = prompt("Qual sua idade?");
+if (idade >= 18) {
+  alert("Você pode votar.");
+} else {
+  alert("Você ainda não pode votar.");
+}
+      </code>
+    </details>
+  </div>
+
+  <!-- Adicionar os demais exercícios JS... -->
+
+  <h2>Java</h2>
+
+  <div class="exercicio">
+    <strong>1. Condição Simples</strong><br>
+    Leia um número e diga se ele é maior que 100.
+    <details>
+      <summary>Mostrar resposta</summary>
+      <code>
+import java.util.Scanner;
+
+public class Exemplo {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Digite um número: ");
+    int numero = sc.nextInt();
+
+    if (numero > 100) {
+      System.out.println("Maior que 100");
+    }
+  }
+}
+      </code>
+    </details>
+  </div>
+
+  <div class="exercicio">
+    <strong>2. Condição Composta</strong><br>
+    Verifique se uma pessoa é maior de idade (18 anos).
+    <details>
+      <summary>Mostrar resposta</summary>
+      <code>
+Scanner sc = new Scanner(System.in);
+System.out.print("Digite sua idade: ");
+int idade = sc.nextInt();
+
+if (idade >= 18) {
+  System.out.println("Maior de idade");
+} else {
+  System.out.println("Menor de idade");
+}
+      </code>
+    </details>
+  </div>
+
+  <!-- Adicionar os demais exercícios Java... -->
+
+</body>
+
+</html>
